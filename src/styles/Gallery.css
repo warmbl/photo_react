@@ -1,0 +1,30 @@
+.swiploop {
+    overflow: hidden;
+    position: absolute;
+    width: 100%; /* Ширина блока */
+    height: 80%; /* Высота блока */
+    display: flex;
+    flex-direction: row;
+}
+
+.slider {
+    overflow: scroll; /*Добавляем полосы прокрутки */
+    overflow-y: hidden;
+    width: 100%; /* Ширина блока */
+    height: 100%; /* Высота блока */
+    display: flex;
+    flex-direction: row;
+    -webkit-overflow-scrolling: touch;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.center-menu {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 120%;
+    transform: translateY(-50%);
+}
