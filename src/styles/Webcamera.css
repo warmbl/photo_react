@@ -1,0 +1,22 @@
+.screen{
+    position: fixed;
+    background-color: rgb(240, 240, 240);
+    width: 30%;
+
+    margin: 0 auto;
+
+}
+
+.img-screen{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.center-camera{
+    margin: 0 auto;
+}
+
+video {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}

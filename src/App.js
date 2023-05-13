@@ -25,14 +25,18 @@ function App() {
     }
   }
 
+  function deletePhoto(photo){
+    setPhotos(photos.filter(p=> p.id !== photo.id))
+    counterPhoto-=1;
+  }
+
   return (
     <div className='App'>
-      <div>
-        <Webcamera addNewPhoto={addNewPhoto}/>
-      </div>
+      <Webcamera addNewPhoto={addNewPhoto}/>
+
       <div className='center-menu'>
         <div className='swiploop'>
-          <PhotoList photos={photos}/>
+          <PhotoList remove={deletePhoto} photos={photos}/>
         </div>
       </div>
     </div>

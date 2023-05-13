@@ -1,8 +1,26 @@
 .myBtn{
+    color: teal;
+    font-size: 14px;
+    background: white;
+    border: 8px solid teal;
+    cursor: pointer;
+    height: 80px;
+    width: 150px;
+    border-radius: 10%;
+}
+
+.makePhoto{
     padding: 5px 20px;
     color: teal;
     font-size: 14px;
-    background: transparent;
-    border: 1px solid teal;
+    background: white;
+    border: 8px solid teal;
     cursor: pointer;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 40%;
+    left: 20%;
 }

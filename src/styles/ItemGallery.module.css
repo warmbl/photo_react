@@ -1,9 +1,30 @@
 .sliderItem {
-    min-width: 350px;
+    min-width: 30px;
+    width: 300px;
     height: 100%;
     scroll-behavior: smooth;
     display: flex;
     justify-content: center;
     align-items: center;
     color: aquamarine;
+
+    padding: 2%;
+}
+
+.imgSliderItem{
+    width: 200px;
+}
+
+.butDelete{
+    position: fixed;
+
+    padding: 10px 10px;
+    color: teal;
+    font-size: 20px;
+    background: white;
+    border: 5px solid teal;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
 }
