@@ -4,6 +4,8 @@ import MyButton from './UI/button/MyButton';
 import '../styles/App.css';
 import '../styles/Webcamera.css';
 import MakePhoto from './UI/button/MakePhoto';
+import Refresh from './UI/button/Refresh';
+import refresh1 from './img/refresh1.png';
 
 const Webcamera = React.forwardRef(({addNewPhoto}, ref) => {
     const webcamRef = React.useRef(null);
@@ -43,7 +45,7 @@ const Webcamera = React.forwardRef(({addNewPhoto}, ref) => {
                 }}
             />
             <MakePhoto onClick={capture}></MakePhoto>
-            <button onClick={handleClick}>Сменить камеру</button>
+            <Refresh onClick={handleClick}><img src={refresh1} alt="refresh" className='refresh'/></Refresh>
             { imgSrc && imgSrc.length > 0 &&             
                 <div className='screen'>
                     <img className ='img-screen' ref={ref} alt='' src={imgSrc}/>
