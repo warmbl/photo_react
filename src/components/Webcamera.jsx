@@ -46,14 +46,20 @@ const Webcamera = React.forwardRef(({addNewPhoto}, ref) => {
             />
             <MakePhoto onClick={capture}></MakePhoto>
             <Refresh onClick={handleClick}><img src={refresh1} alt="refresh" className='refresh'/></Refresh>
-            { imgSrc && imgSrc.length > 0 &&             
+            { imgSrc && imgSrc.length > 0 &&   
+                // <div> 
+                //     <img className ='img-screen' ref={ref} alt='' src={imgSrc}/>
+                //     addNewPhoto(e, imgSrc)
+                //     setImgSrc('');
+                // </div> 
+
                 <div className='screen'>
                     <img className ='img-screen' ref={ref} alt='' src={imgSrc}/>
                     <MyButton onClick={(e) => {
                     addNewPhoto(e, imgSrc)
                     setImgSrc('');
-                    }}>Сохранить фото</MyButton>
-                <MyButton onClick={() => setImgSrc('')}>Удалить фото</MyButton>
+                    }}>Сохранить</MyButton>
+                    <MyButton onClick={() => setImgSrc('')}>Удалить</MyButton>
                 </div> 
             }
 

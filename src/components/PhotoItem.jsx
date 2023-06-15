@@ -6,7 +6,7 @@ const PhotoItem =({remove, photo})=>{
         <div className={classes.sliderItem}>
             <img alt='' src={photo.scrn} className={classes.imgSliderItem}></img>
             <button className={classes.butDelete} onClick={() => remove(photo)}>
-                X
+                
             </button>
         </div>
     );
